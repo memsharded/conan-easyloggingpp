@@ -6,7 +6,7 @@ username = os.getenv("CONAN_USERNAME", "memsharded")
 
 class EasyLoggingTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "easyloggingpp/9.80@%s/%s" % (username, channel)
+    requires = "easyloggingpp/8.91@%s/%s" % (username, channel)
     generators = "cmake"
 
     def build(self):

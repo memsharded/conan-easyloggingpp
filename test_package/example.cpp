@@ -1,8 +1,7 @@
 #include "easylogging++.h"
 
-INITIALIZE_EASYLOGGINGPP
+_INITIALIZE_EASYLOGGINGPP
 
-int main(int argv, char* argc[]) {
-   LOG(INFO) << "My first info log using default logger";
-   return 0;
+int main(void) {
+   LINFO << "This is my first log";
 }
