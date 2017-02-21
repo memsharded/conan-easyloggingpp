@@ -10,4 +10,16 @@ So far, I am uploading to conan 2 versions, latest 9.94, but also 8.91, supposed
 to require C++11, for those with old compilers.
 
 
+From 9.90, this library has changed (for faster compilation times), and now has a source file to be compiled:
+- You have to compile the provided ``easylogging++.cc`` source file into your application.
+  For this you need to import the source file from your consumer:
 
+  ```python
+      def imports(self):
+          self.copy("*.cc")
+  ```
+  Then, compile the file in your app:
+
+  ```cmake
+  ADD_EXECUTABLE(example example.cpp include/easylogging++.cc)
+  ```
