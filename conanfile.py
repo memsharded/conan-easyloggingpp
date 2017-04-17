@@ -4,7 +4,7 @@ import os
 
 class EasyLoggingConan(ConanFile):
     name = "easyloggingpp"
-    version = "9.94.1"
+    version = "9.94.2"
     license = "MIT"
     url = "https://github.com/memsharded/conan-easyloggingpp.git"
     description = """Single header C++ logging library. It is extremely powerful, extendable, 
